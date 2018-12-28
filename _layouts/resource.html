@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+<div class="header-block resource">
+    <h1 class="page-header">{{ page.title }}</h1>
+    <h2 class="page-subheader">{{ page.description }}</h2>
+</div>
+
+{{ content }}
+
+<script>
+window.sr = ScrollReveal();
+sr.reveal('.page-header', {duration: 1000});
+sr.reveal('.page-subheader', {duration: 1300});
+</script>
