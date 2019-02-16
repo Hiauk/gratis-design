@@ -85,27 +85,27 @@ padding: 0 20px;
 box-sizing: border-box;
 }
 
-.page-header, .main-content > h1{
+.page-header, .main-content h1{
 line-height: 1.28em;
 font-weight: 500;
 margin: .4em 0 .1em!important;
 }
 
 @media (min-width: 750px) {
-    .page-header, .main-content > h1{
+    .page-header, .main-content h1{
 	font-size: 3em;
     }
-    .page-subheader, .main-content > h2{
+    .page-subheader, .main-content h2{
 	font-size: 2em;
     }
 }
 
-.page-subheader, .main-content > h2{
+.page-subheader, .main-content h2{
 line-height: 1.2em;
 font-weight: 300;
 }
 
-.header, .main-content > h3{
+.header, .main-content h3{
 font-size: 1.5em;
 line-height: 1em;
 font-weight: 500;
