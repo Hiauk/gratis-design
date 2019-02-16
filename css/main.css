@@ -66,7 +66,7 @@ nav > .nav-holder > .links > ul > li > a{
 
 .header-block{
     background-color: #333;
-    background-image: url('/images/gratis-homepage.jpeg');
+    background-image: url('/images/homepage/gratis-homepage.jpeg');
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -99,7 +99,6 @@ nav > .nav-holder > .links > ul > li > a{
 
 .stats-screen{
     background-color: #333;
-    background-image: url('/images/gratis-stats.png');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -130,6 +129,22 @@ nav > .nav-holder > .links > ul > li > a{
     .stats-screen .columns{
         margin-bottom: 2em;
     }
+}
+
+.resource-body h2{
+    margin-top: 2.6em;
+
+}
+
+.resource-body figure{
+    margin: 0;
+    padding: 0;
+}
+
+.resource-body figure > figcaption{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 ol{

@@ -111,7 +111,7 @@ line-height: 1em;
 font-weight: 500;
 }
 
-p, .main-content > ul > li, ol > li{
+p, .main-content ul > li, ol > li{
 font-size: 1.2em;
 font-weight: 300;
 line-height: 1.5em;
@@ -162,14 +162,6 @@ img{
 max-width: 100%;
 display: block;
 margin: 0 auto;
--webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-filter: grayscale(100%); /* FF 35+ */
-}
-
-img:hover{
-transition: filter .5s ease-in-out;
--webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-filter: grayscale(0%); /* FF 35+ */
 }
 
 .main-content{
