@@ -8,7 +8,7 @@ categories: faq
 
 ## What is the internet?
 
-The internet is built upon the concepts of wide area networking spearheaded by several computer science laborities around the world and the work on the **ARPANET project** funded by the U.S. Department of Defense in the 1960's.
+The internet is built upon the ideas and technology coined in the 1960's. The pioneers of the internet come from a wide range of backgrounds including multiple computer science laboratories to the ARPANET project funded by the U.S. Department of Defense.
 
 In its current iteration the internet is made up of millions of computers all over the world that are connected together using cables, switches and routers allowing you to share and access information, images and video files in milliseconds.
 
