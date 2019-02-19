@@ -98,7 +98,6 @@ nav > .nav-holder > .links > ul > li > a{
 }
 
 .stats-screen{
-    background-color: #333;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -106,8 +105,6 @@ nav > .nav-holder > .links > ul > li > a{
 }
 
 .stats-screen > .container > h3{
-    background-color: #fff;
-    padding-top: 1em;
     padding-bottom: 1em;
     text-transform: uppercase;
     font-weight: bold;
@@ -115,10 +112,6 @@ nav > .nav-holder > .links > ul > li > a{
 
 .stats-screen h3{
     font-size: 2em;
-}
-
-.stats-screen .columns{
-    background-color: #fff;
 }
 
 .stats-screen .columns > h3{
