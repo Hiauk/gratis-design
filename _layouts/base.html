@@ -16,33 +16,69 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/kube.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400,900" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/countup.min.js"></script>
+    <script src="/js/inview.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="canonical" href="http://gratisdesign.co.uk">
 </head>
-
 <body>
-    <nav>
-        <div class="nav-holder container">
-            <div class="company"><a href="/">Gratis Design</a></div>
-            <div class="links">
+    <div id="mobile-nav" class="mobile-nav" style="display:none;">
+        <div class="container">
+            <div class="is-text-right"><span class="close is-big" onclick="toggle_nav();"></span></div>
+            <h3>Monitoring</h3>
+            <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/resources">Resources</a></li>
                     <li><a href="/contact">Get in touch</a></li>
                 </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="navbar-container">
+        <div class="container">
+            <div class="is-navbar-container container">
+                <div class="is-brand">
+                    <b class="is-logo"><a href="{{site.baseurl}}/">GratisDesign</a></b>
+                    <a href="#"
+                    class="nav-toggle is-push-right-mobile is-shown-mobile icon-kube-menu"
+                    onclick="toggle_nav();"></a>
+                </div>
+                <div class="is-navbar is-hidden-mobile">
+                    <nav class="is-push-right">
+                        <ul>
+                            <ul>
+                                <li><a {% unless page.url contains 'resources' or page.url contains 'contact' %}class="active-link"{% endunless %}href="/">Home</a></li>
+                                <li><a {% if page.url contains 'resources' %}class="active-link"{% endif %} href="/resources">Resources</a></li>
+                                <li><a {% if page.url contains 'contact' %}class="active-link"{% endif %} href="/contact">Get in touch</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
     <div class="main-content">
     {{ content }}
     </div>
     {% include footer.html %}
     </div>
+    <script>
+        function toggle_nav(){
+            var x = document.getElementById("mobile-nav");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

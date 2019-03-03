@@ -1,18 +1,22 @@
 ---
 layout: base
 ---
-<section>
-    <div class="container">    
-	<a href="/resources">Return to resource list</a>
-        <h1 class="page-header">{{ page.title }}</h1>
-        <h2 class="page-subheader">{{ page.description }}</h2>
-    </div>
+<section class="container">    
+    <nav class="breadcrumb">
+        <a href="/">home</a>
+        <a href="/resources">resources</a>
+        <span>{{ page.title|downcase }}</span>
+    </nav>
+    <h1 class="page-header">{{ page.title }}</h1>
+    <h2 class="page-subheader">{{ page.description }}</h2>
 </section>
 
-<section>
-    <div class="container resource-body">
-        {{ content }}
-    </div>
+<div class="container">
+    <div class="seperator"></div>
+</div>
+
+<section class="container resource-body">
+    {{ content }}
 </section>
 
 <script>

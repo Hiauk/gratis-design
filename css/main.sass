@@ -1,0 +1,162 @@
+---
+---
+
+$font: 'Noto Sans JP', sans-serif
+$normal: 100
+$bold: 400
+$bolder: 900
+
+$tablet-width: 768px
+$desktop-width: 1024px
+
+=media($size)
+  @media (min-width: #{$size})
+    @content
+
+$primary-font: #333
+$secondary-font: #fff
+//$brand: #595e6f
+$brand: #2E8F74
+$secondary-brand: #4c5060
+$hover: #ececed
+//$active: #f56e4e
+$active: #333
+    
+body
+    font-family: $font
+    font-weight: $normal
+    color: $primary-font
+    margin-top: 60px
+
+.main-content
+    min-height: 100vh
+
+.navbar-container
+    background-color: $brand
+    padding: 10px 0
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+
+.is-navbar-container
+    a
+        color: $secondary-font
+        text-decoration: none
+    .active-link
+        color: $active
+    .is-logo
+        text-transform: uppercase
+
+.mobile-nav    
+    position: fixed
+    background-color: $secondary-brand
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    z-index: 200
+    overflow: scroll
+    color: $secondary-font
+    padding-top: 1em
+    h3
+        padding-top: 2em
+    a
+        text-decoration: none
+        color: $secondary-font
+        &:hover
+            color: $hover
+
+.container
+    position: relative
+    width: 100%
+    max-width: 970px
+    margin: 0 auto
+    padding: 0 20px
+    box-sizing: border-box
+    &:after
+        content: ""
+        display: table
+        clear: both
+    +media($tablet-width)
+        width: 80%
+
+.hero-banner
+    width: 100%
+    min-height: 50vh
+    .logo
+        img
+            max-width: 6em
+            margin-top: 3em
+    .hero-banner-words
+        +media($desktop-width)
+            position: absolute
+            bottom: 2em
+        max-width: 400px
+        bottom: 10em
+        h1
+            font-size: 4em
+        h3, h5
+            font-weight: $normal
+
+.button.is-main
+    color: $primary-font
+    border: 2px solid $primary-font
+    background: $secondary-font
+    &:hover
+        background-color: $primary-font
+        border: 2px solid $primary-font
+        color: $secondary-font
+
+.seperator
+    width: 3em
+    border-bottom: 5px solid $primary-font
+    margin-bottom: 5em
+
+section
+    padding: 3em 20px !important
+    p
+        margin-bottom: 1.5em
+    p.main
+        font-weight: $bold
+        width: 60%
+
+.introduction
+    h2
+        margin-bottom: .75em
+
+.uppercase
+    text-transform: uppercase
+
+.information
+    background-color: $brand
+    color: $secondary-font
+    text-align: center
+    padding: 2em 1em
+    small, a
+        color: $secondary-font
+    .is-col
+        padding-top: 2em
+
+ol
+    list-style-type: decimal-leading-zero
+    margin-left: 0
+    padding-left: 0
+    li
+        font-size: 2em
+        font-weight: $bold
+        margin-bottom: .5em
+
+.resource-body
+    img
+        display: block
+        text-align: center
+        margin: 2.5em auto 0
+    h2
+        margin-top: 2.5em
+    h3
+        margin-top: 2em
+
+.page-subheader
+    font-weight: $normal

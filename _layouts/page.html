@@ -4,6 +4,10 @@ layout: base
 
 <section>
     <div class="container">
+        <nav class="breadcrumb">
+            <a href="/">home</a>
+            <span>{{ page.title|downcase }}</span>
+        </nav>
         {{ content }}
     </div>
 </section>
