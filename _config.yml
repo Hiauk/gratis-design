@@ -37,3 +37,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+sass:
+  style: compressed
