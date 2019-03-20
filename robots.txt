@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.gratisdesign.co.uk/sitemap.xml
+Sitemap: https://www.gratisdesign.co.uk/sitemap.xml
