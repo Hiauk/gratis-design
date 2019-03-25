@@ -160,3 +160,42 @@ ol
 
 .page-subheader
     font-weight: $normal
+
+.item-show
+    opacity: 0
+
+.in-view-appear
+    opacity: 100
+    transition: opacity 1s
+    +media($tablet-width)
+        transition: opacity 2s
+
+.item-right
+    position: relative !important
+    left: -500px
+
+.in-view-right
+    left: 0
+    transition: left 1s
+    +media($tablet-width)
+        transition: left 2s
+
+.item-left
+    position: relative !important
+    right: -500px
+
+.in-view-left
+    right: 0
+    transition: right 1s
+    +media($tablet-width)
+        transition: right 2s
+
+.item-up
+    position: relative !important
+    bottom: -200px
+
+.in-view-up
+    bottom: 0
+    transition: bottom .5s
+    +media($tablet-width)
+        transition: bottom 1s

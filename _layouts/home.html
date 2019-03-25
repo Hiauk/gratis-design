@@ -36,16 +36,16 @@ layout: base
 
 <section class="container">
     <div class="is-row information">
-        <div class="is-col reveal">
-            <h3><span id="domain-names"></span> <small>million</small></h3>
+        <div class="is-col item-show">
+            <h3><span id="domain-names">342</span> <small>million</small></h3>
             <p>registered <a href="/resources/what-is-a-domain-name">domain names</a>.</p>
         </div>
-        <div class="is-col reveal">
-            <h3><span id="google-searches"></span> <small>billion</small></h3>
+        <div class="is-col item-show">
+            <h3><span id="google-searches">5</span> <small>billion</small></h3>
             <p>Google searches every day.</p>
         </div>
-        <div class="is-col reveal">
-            <h3><span id="mobile-traffic"></span> <small>percent</small></h3>
+        <div class="is-col item-show">
+            <h3><span id="mobile-traffic">52.2</span> <small>percent</small></h3>
             <p>of internet traffic is mobile.</p>
         </div>
     </div>
@@ -59,15 +59,15 @@ layout: base
     <h2>How it works</h2>
     <ol>
         <li>What is the site for?</li>
-            <p class="reveal">For a website to be successful it needs to have a core theme or message. It could be about your company, a certain cause or a single topic that you wish to showcase.</p>
+            <p class="item-show">For a website to be successful it needs to have a core theme or message. It could be about your company, a certain cause or a single topic that you wish to showcase.</p>
         <li>Get a domain name</li>
-            <p class="reveal">A domain name is very important, it's the first thing a user will see and it can be used to quickly explain what your website is about.</p>
-            <p class="reveal">To find out more about domain names click <a href="/resources/what-is-a-domain-name">here</a>.</p>
+            <p class="item-show">A domain name is very important, it's the first thing a user will see and it can be used to quickly explain what your website is about.</p>
+            <p class="item-show">To find out more about domain names click <a href="/resources/what-is-a-domain-name">here</a>.</p>
         <li>Plan your content</li>
-            <p class="reveal">Only you know what your site should contain to best convey your theme or message and it's best to plan what important information needs to be on the website.</p>
-            <p class="reveal">You don't need to have everything figured out, we are more than happy to work with you with this planning stage.</p>
+            <p class="item-show">Only you know what your site should contain to best convey your theme or message and it's best to plan what important information needs to be on the website.</p>
+            <p class="item-show">You don't need to have everything figured out, we are more than happy to work with you with this planning stage.</p>
         <li>Get in touch</li>
-            <p class="reveal">Let us know that you want our help and we will help you plan and construct your website. We take care of all the technical headaches so you don't have to worry about anything!</p>
+            <p class="item-show">Let us know that you want our help and we will help you plan and construct your website. We take care of all the technical headaches so you don't have to worry about anything!</p>
             <p><center><a href="{{ site.baseurl }}/contact" class="button is-big is-main is-secondary">Get in touch</a></center></p>
     </ol>
 </section>
@@ -75,22 +75,3 @@ layout: base
 <section class="container">
     {{ content }}
 </section>
-<script>
-window.sr = ScrollReveal();
-sr.reveal('.page-header', {duration: 1000});
-sr.reveal('.page-subheader', {duration: 1300});
-sr.reveal('.header-button', {duration: 1600});
-sr.reveal('.reveal', {duration: 2000});
-</script>
-<script>
-$('.information').one('inview', function(event, isInView) {
-    if (isInView) {
-        const domainnames = new CountUp('domain-names', 0, 342);
-        domainnames.start();
-        const googlesearches = new CountUp('google-searches', 0, 5);
-        googlesearches.start();
-        const mobiletraffic = new CountUp('mobile-traffic', 0, 52.2);
-        mobiletraffic.start();
-    }
-});
-</script>
