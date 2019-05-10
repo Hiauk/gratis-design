@@ -23,6 +23,7 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | replace:'.html', '' | absolute_url }}">
 </head>
+
 <body>
     <div id="mobile-nav" class="mobile-nav" style="display:none;">
         <div class="container">
@@ -43,18 +44,18 @@
             <div class="is-navbar-container container">
                 <div class="is-brand">
                     <b class="is-logo"><a href="{{site.baseurl}}/">GratisDesign</a></b>
-                    <a href="#"
-                    class="nav-toggle is-push-right-mobile is-shown-mobile icon-kube-menu"
-                    onclick="toggle_nav();"></a>
+                    <a href="#" class="nav-toggle is-push-right-mobile is-shown-mobile icon-kube-menu"
+                        onclick="toggle_nav();"></a>
                 </div>
                 <div class="is-navbar is-hidden-mobile">
                     <nav class="is-push-right">
-                        <ul>
-                            <ul>
-                                <li><a {% unless page.url contains 'resources' or page.url contains 'contact' %}class="active-link"{% endunless %} href="/">Home</a></li>
-                                <li><a {% if page.url contains 'resources' %}class="active-link"{% endif %} href="/resources">Resources</a></li>
-                                <li><a {% if page.url contains 'contact' %}class="active-link"{% endif %} href="/contact">Get in touch</a></li>
-                            </ul>
+                        <ul class="navbar-links">
+                            <li><a {% unless page.url contains 'resources' or page.url contains 'contact' %}class="active-link"
+                                    {% endunless %} href="/">Home</a></li>
+                            <li><a {% if page.url contains 'resources' %}class="active-link" {% endif %}
+                                    href="/resources">Resources</a></li>
+                            <li><a {% if page.url contains 'contact' %}class="active-link" {% endif %}
+                                    href="/contact">Get in touch</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,7 +63,7 @@
         </div>
     </div>
     <div class="main-content">
-    {{ content }}
+        {{ content }}
     </div>
     {% include footer.html %}
     <script>
@@ -103,7 +104,7 @@
         };
         window.addEventListener('load', check_animation, false);
         window.addEventListener('scroll', check_animation, false);
-        function toggle_nav(){
+        function toggle_nav() {
             var x = document.getElementById("mobile-nav");
             if (x.style.display === "none") {
                 x.style.display = "block";
