@@ -15,9 +15,8 @@ $desktop-width: 1024px
 
 $primary-font: #333
 $secondary-font: #fff
-//$brand: #595e6f
-$brand: #2E8F74
-$secondary-brand: #4c5060
+$brand: #445963
+$secondary-brand: #708690
 $hover: #ececed
 //$active: #f56e4e
 $active: #333
@@ -83,119 +82,42 @@ body
     +media($tablet-width)
         width: 80%
 
-.hero-banner
-    min-height: 50vh
-    .logo
-        img
-            max-width: 6em
-            margin-top: 3em
-    .hero-banner-words
-        // +media($desktop-width)
-        //     position: absolute
-        //     bottom: 2em
-        // max-width: 400px
-        // bottom: 10em
-        h1
-            font-size: 4em
-        h3, h5
-            font-weight: $normal
-
-.button.is-main
-    color: $primary-font
-    border: 2px solid $primary-font
-    background: $secondary-font
-    &:hover
-        background-color: $primary-font
-        border: 2px solid $primary-font
-        color: $secondary-font
-
-.seperator
-    width: 3em
-    border-bottom: 5px solid $primary-font
-    margin-bottom: 5em
-
 section
-    padding: 3em 20px !important
-    p
-        margin-bottom: 1.5em
-    p.main
+    margin: 10em 0
+
+.header
+    .site-header
+        font-family: $font
+        font-weight: $normal
+        color: $primary-font
+    .site-subheader
+        font-family: $font
         font-weight: $bold
-        width: 60%
+        color: $secondary-brand 
+        img
+            width: 25px
+            padding-bottom: 6px
+            margin-right: .5em
+    .button
+        border-color: $primary-font
+        color: $primary-font
+        &:hover
+            background-color: $brand
+            border-color: $brand
 
-.introduction
-    h2
-        margin-bottom: .75em
-
-.uppercase
-    text-transform: uppercase
-
-.information
-    background-color: $brand
-    color: $secondary-font
-    text-align: center
-    padding: 2em 1em
-    small, a
-        color: $secondary-font
-    .is-col
-        padding-top: 2em
-
-ol
-    list-style-type: decimal-leading-zero
-    margin-left: 0
-    padding-left: 0
-    li
-        font-size: 2em
-        font-weight: $bold
-        margin-bottom: .5em
-
-.resource-body
-    img
-        display: block
-        text-align: center
-        margin: 2.5em auto 0
-    h2
-        margin-top: 2.5em
-    h3
-        margin-top: 2em
-
-.page-subheader
+.section-header
+    font-family: $font
     font-weight: $normal
+    color: $primary-font
 
-.item-show
-    opacity: 0
+#about
+    p.is-large
+        color: $brand
+        font-weight: $bold
+        margin: 2em 1em
 
-.in-view-appear
-    opacity: 100
-    transition: opacity 1s
-    +media($tablet-width)
-        transition: opacity 2s
-
-.item-right
-    position: relative !important
-    left: -500px
-
-.in-view-right
-    left: 0
-    transition: left 1s
-    +media($tablet-width)
-        transition: left 2s
-
-.item-left
-    position: relative !important
-    right: -500px
-
-.in-view-left
-    right: 0
-    transition: right 1s
-    +media($tablet-width)
-        transition: right 2s
-
-.item-up
-    position: relative !important
-    bottom: -200px
-
-.in-view-up
-    bottom: 0
-    transition: bottom .5s
-    +media($tablet-width)
-        transition: bottom 1s
+.contact-form
+    label
+        margin: 1em 0 
+    .button
+        margin-top: 1em

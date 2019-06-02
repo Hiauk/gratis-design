@@ -2,6 +2,7 @@
 layout: page
 title: Resources
 permalink: /resources/
+description: A collection of articles with tips and information to help you get the best digital footprint for the least amount of money without sacrificing quality.
 ---
 
 # Resources
