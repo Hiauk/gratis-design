@@ -1,11 +1,6 @@
 ---
 ---
 
-$font: 'Noto Sans JP', sans-serif
-$normal: 100
-$bold: 400
-$bolder: 900
-
 $tablet-width: 768px
 $desktop-width: 1024px
 
@@ -15,58 +10,14 @@ $desktop-width: 1024px
 
 $primary-font: #333
 $secondary-font: #fff
-$brand: #445963
-$secondary-brand: #708690
-$hover: #ececed
-//$active: #f56e4e
-$active: #333
     
 body
     font-family: $font
-    font-weight: $normal
     color: $primary-font
     margin-top: 60px
 
 .main-content
     min-height: 100vh
-
-.navbar-container
-    background-color: $brand
-    padding: 10px 0
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    z-index: 100
-
-.is-navbar-container
-    a
-        color: $secondary-font
-        text-decoration: none
-    .active-link
-        font-weight: bold
-        border-bottom: 3px solid $secondary-font
-    .is-logo
-        text-transform: uppercase
-
-.mobile-nav    
-    position: fixed
-    background-color: $secondary-brand
-    top: 0
-    bottom: 0
-    width: 100%
-    height: 100%
-    z-index: 200
-    overflow: scroll
-    color: $secondary-font
-    padding-top: 1em
-    h3
-        padding-top: 2em
-    a
-        text-decoration: none
-        color: $secondary-font
-        &:hover
-            color: $hover
 
 .container
     position: relative
@@ -81,43 +32,3 @@ body
         clear: both
     +media($tablet-width)
         width: 80%
-
-section
-    margin: 10em 0
-
-.header
-    .site-header
-        font-family: $font
-        font-weight: $normal
-        color: $primary-font
-    .site-subheader
-        font-family: $font
-        font-weight: $bold
-        color: $secondary-brand 
-        img
-            width: 25px
-            padding-bottom: 6px
-            margin-right: .5em
-    .button
-        border-color: $primary-font
-        color: $primary-font
-        &:hover
-            background-color: $brand
-            border-color: $brand
-
-.section-header
-    font-family: $font
-    font-weight: $normal
-    color: $primary-font
-
-#about
-    p.is-large
-        color: $brand
-        font-weight: $bold
-        margin: 2em 1em
-
-.contact-form
-    label
-        margin: 1em 0 
-    .button
-        margin-top: 1em
