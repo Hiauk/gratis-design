@@ -8,8 +8,8 @@ $desktop-width: 1024px
   @media (min-width: #{$size})
     @content
 
-$primary-font: #333
-$secondary-font: #fff
+$primary-font: #111
+$link-font: #333
     
 body
     color: $primary-font
@@ -32,12 +32,11 @@ body
     +media($tablet-width)
         width: 80%
 
-.button.is-secondary
-    color: $primary-font
-    border-color: $primary-font
-    &:hover
-        background-color: $primary-font
-        border-color: $primary-font
-
 .main-logo
-    max-height: 50vh
+  max-height: 50vh
+
+h1
+    font-weight: lighter
+
+a
+    color: $link-font
